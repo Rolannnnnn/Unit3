@@ -1,0 +1,23 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    int i = 0;
+    printf("Type the number: ");
+    scanf("%d", &num);
+    
+    while (i < num) {
+        ++i;
+        if (i % 2 == 1) {
+            printf("%d \n", i);
+        }
+        else {
+            continue;
+        }
+    }
+    
+    return 0;
+}
