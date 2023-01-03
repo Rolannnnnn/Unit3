@@ -1,0 +1,22 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Type the number: ");
+    scanf("%d", &num);
+    int x = num;
+    
+    printf("Factors are: \n");
+    
+    do {
+        if (num % x == 0) {
+            printf("%d \n", x);
+        }
+        --x;
+    } while (x != 0);
+    
+    return 0;
+}
