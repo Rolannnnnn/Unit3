@@ -1,0 +1,37 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    float x;
+    int n;
+    int i, j, exp;
+    int k = 0;
+    int fac = 1;
+    printf("Type the x, then the n: ");
+    scanf("%f %d", &x, &n);
+    float ans = x;
+    
+    for (i = 3; i <= n; i += 2) {
+        k++;
+        for (j = i; j != 0; --j) {
+            fac *= i;
+        }
+        
+        exp = pow(x, i);
+        if (k % 2 == 1) {
+            ans = ans - (exp/fac);
+        }
+        else {
+            ans = ans + (exp/fac);
+        }
+        
+        fac = 1;
+    }
+    
+    printf("The answer is: %f", ans);
+    
+    return 0;
+}
