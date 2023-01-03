@@ -1,0 +1,29 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    int min, max;
+    int sum = 0;
+    int product = 1;
+    printf("Type the minimum: ");
+    scanf("%d", &min);
+    printf("Type the maximum: ");
+    scanf("%d", &max);
+    int i = max;
+    
+    while (i >= min) {
+        if (i <= 0) {
+            break;
+        }
+        sum += i;
+        product *= i;
+        --i;
+    }
+    
+    printf("The sum is: %d \n", sum);
+    printf("The product is %d", product);
+    
+    return 0;
+}
