@@ -1,0 +1,53 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    char animal, res;
+    int cost;
+    int x = 1;
+    
+    while (x) {
+        printf("Type of animal (d for dog, c for cat, b for bird, and r for reptile): ");
+        scanf(" %c", &animal);
+        printf("Has it been neutered (y for yes, n for no)?: ");
+        scanf(" %c", &res);
+        if (res == 'y') {
+            if (animal == 'd') {
+                cost = 50;
+            }
+            else if (animal == 'c') {
+                cost = 40;
+            }
+            else if (animal == 'b' || animal == 'r') {
+                cost = 0;
+            }
+            else {
+                printf("Cannot understand animal.");
+            }
+        }
+        else if (res == 'n') {
+            if (animal == 'd') {
+                cost = 80;
+            }
+            else if (animal == 'c') {
+                cost = 60;
+            }
+            else if (animal == 'b' || animal == 'r') {
+                cost = 0;
+            }
+            else {
+                printf("Cannot understand animal.");
+            }
+        }
+        printf("The cost is: $%d \n", cost);
+        printf("Do you want to insure another animal (y for yes, n for no)?: ");
+        scanf(" %c", &res);
+        if (res == 'n') {
+            x = 0;
+        }
+    }
+    
+    return 0;
+}
