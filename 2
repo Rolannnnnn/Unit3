@@ -14,13 +14,13 @@ int main() {
         printf("Has it been neutered (y for yes, n for no)?: ");
         scanf(" %c", &res);
         if (res == 'y') {
-            if (animal == 'd') {
+            if (animal == 'd' || animal == 'D') {
                 cost = 50;
             }
-            else if (animal == 'c') {
+            else if (animal == 'c' || animal == 'C') {
                 cost = 40;
             }
-            else if (animal == 'b' || animal == 'r') {
+            else if (animal == 'b' || animal == 'r' || animal == 'B' || animal == 'R') {
                 cost = 0;
             }
             else {
@@ -28,13 +28,13 @@ int main() {
             }
         }
         else if (res == 'n') {
-            if (animal == 'd') {
+            if (animal == 'd' || animal == 'D') {
                 cost = 80;
             }
-            else if (animal == 'c') {
+            else if (animal == 'c' || animal == 'C') {
                 cost = 60;
             }
-            else if (animal == 'b' || animal == 'r') {
+            else if (animal == 'b' || animal == 'r' || animal == 'B' || animal == 'R') {
                 cost = 0;
             }
             else {
