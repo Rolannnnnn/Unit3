@@ -1,0 +1,22 @@
+//Rolan Jay P. Samonte
+//BSCS 1-B
+
+#include <stdio.h>
+
+int main() {
+    int num, remainder;
+    int x = 0;
+
+    printf("Input a number: ");
+    scanf("%d", &num);
+
+    while (num != 0) {
+        remainder = num % 10;
+        x = x * 10 + remainder;
+        num /= 10;
+    }
+
+    printf("= %d", x);
+    
+    return 0;
+}
