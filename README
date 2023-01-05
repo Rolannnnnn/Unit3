@@ -1,0 +1,10 @@
+1 - Calculates the sum, mean, minimum, and maximum value of an array.
+2 - A menu-driven problem using switch block.
+3 - Reverses digits of a number (using while)
+4 - Prints the factors of a number (using do-while)
+5 - Prints the factorial of a number (using for)
+6 - Prints odd numbers under a range (includes continue)
+7 - Prints the sum of all positive numbers under a range (includes break)
+8 - Calculates for sin(x^n)
+9 - Displays a number tree
+10 - Determines if year is a leap year
